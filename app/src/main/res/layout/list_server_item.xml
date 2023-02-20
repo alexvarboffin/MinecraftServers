@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin8dp"
+    android:background="@color/width_back">
+
+    <ImageView
+        android:id="@+id/image_server"
+        android:layout_width="@dimen/image_size100dp"
+        android:layout_height="@dimen/image_size100dp"
+        android:layout_marginStart="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:background="@color/width"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tittle_server"
+        android:layout_width="@dimen/margin160dp"
+        android:layout_height="@dimen/margin37dp"
+        android:layout_marginStart="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin10dp"
+        android:fontFamily="@font/minecraft_font"
+        android:text="Название сервера"
+        android:textColor="@color/diamond"
+        android:textSize="@dimen/margin16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tittle_ip"
+        app:layout_constraintStart_toEndOf="@+id/image_server"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tittle_ip"
+        android:layout_width="@dimen/margin160dp"
+        android:layout_height="@dimen/margin17dp"
+        android:layout_marginStart="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin64dp"
+        android:fontFamily="@font/minecraft_font"
+        android:text="ip"
+        android:textColor="@color/diamond"
+        android:textSize="@dimen/margin16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_server"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tittle_port"
+        android:layout_width="@dimen/margin160dp"
+        android:layout_height="@dimen/margin17dp"
+        android:layout_marginStart="@dimen/margin8dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:fontFamily="@font/minecraft_font"
+        android:text="port"
+        android:textColor="@color/diamond"
+        android:textSize="@dimen/margin16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_server"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin2dp"
+        android:background="@color/diamond"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_etc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin40dp"
+        android:layout_marginEnd="@dimen/margin35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

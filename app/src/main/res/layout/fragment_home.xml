@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mine_background"
+    tools:context=".fragment.HomeFragment">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textHome_serverOne"
+        android:layout_width="@dimen/margin260dp"
+        android:layout_height="@dimen/margin60dp"
+        android:layout_marginTop="@dimen/matchConstraint"
+        android:layout_marginBottom="@dimen/margin32dp"
+        android:background="@drawable/custom_background"
+        android:focusable="true"
+        android:fontFamily="@font/minecraft_font"
+        android:text="@string/home_textServer1.1"
+        android:textAllCaps="false"
+        android:textColor="@color/diamond"
+        android:textSize="@dimen/margin20sp"
+        app:backgroundTint="@color/width_back"
+        app:layout_constraintBottom_toTopOf="@+id/textHome_serverTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:rippleColor="@color/width" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textHome_serverTwo"
+        android:layout_width="@dimen/margin260dp"
+        android:layout_height="@dimen/margin60dp"
+        android:layout_marginTop="@dimen/margin280dp"
+        android:background="@drawable/custom_background"
+        android:focusable="true"
+        android:fontFamily="@font/minecraft_font"
+        android:text="@string/home_textServer1.16"
+        android:textAllCaps="false"
+        android:textColor="@color/diamond"
+        android:textSize="@dimen/margin20sp"
+        app:backgroundTint="@color/width_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_minecraft"
+        android:layout_width="@dimen/margin300dp"
+        android:layout_height="@dimen/margin135dp"
+        android:layout_marginTop="@dimen/margin12dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/mine_text"
+        app:layout_constraintBottom_toTopOf="@+id/textHome_serverOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_miniGame"
+        android:layout_width="@dimen/margin260dp"
+        android:layout_height="@dimen/margin60dp"
+        android:layout_marginTop="@dimen/margin32dp"
+        android:background="@drawable/custom_background"
+        android:focusable="true"
+        android:fontFamily="@font/minecraft_font"
+        android:text="@string/mini_games"
+        android:textAllCaps="false"
+        android:textColor="@color/diamond"
+        android:textSize="@dimen/margin20sp"
+        app:backgroundTint="@color/width_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHome_serverTwo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_privacy"
+        android:layout_width="@dimen/margin145dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/custom_background"
+        android:focusable="true"
+        android:fontFamily="@font/minecraft_font"
+        android:gravity="center"
+        android:text="@string/textPrivacy"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/margin12sp"
+        app:backgroundTint="@color/width"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_miniGame" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_logoBM"
+        android:layout_width="@dimen/margin60dp"
+        android:layout_height="@dimen/margin60dp"
+        android:layout_marginTop="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_miniGame"
+        app:shapeAppearanceOverlay="@style/roundedImageStyle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

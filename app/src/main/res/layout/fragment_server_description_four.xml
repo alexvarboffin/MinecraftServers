@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mine_background"
+    tools:context=".fragment.serverDescriptionOne.ServerDescriptionFourFragment">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_ToServerFour"
+        android:layout_width="@dimen/margin260dp"
+        android:layout_height="@dimen/margin60dp"
+        android:layout_marginTop="@dimen/margin32dp"
+        android:background="@drawable/custom_background"
+        android:focusable="true"
+        android:fontFamily="@font/minecraft_font"
+        android:text="@string/to_server"
+        android:textAllCaps="false"
+        android:textSize="@dimen/margin16sp"
+        android:textColor="@color/diamond"
+        app:backgroundTint="@color/width_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_description_Four" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backToServerFour"
+        android:layout_width="@dimen/margin145dp"
+        android:layout_height="@dimen/margin60dp"
+        android:layout_marginTop="@dimen/margin32dp"
+        android:layout_marginBottom="@dimen/margin32dp"
+        android:background="@drawable/custom_background"
+        android:focusable="true"
+        android:fontFamily="@font/minecraft_font"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textSize="@dimen/margin16sp"
+        android:textColor="@color/diamond"
+        app:backgroundTint="@color/width_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_ToServerFour"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view_description_Four"
+        android:layout_width="@dimen/margin365dp"
+        android:layout_height="@dimen/margin475dp"
+        android:layout_marginStart="@dimen/margin22dp"
+        android:layout_marginTop="@dimen/margin22dp"
+        android:layout_marginEnd="@dimen/margin22dp"
+        android:background="@color/width_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+            android:id="@+id/imageServerFour"
+            android:layout_width="@dimen/margin110dp"
+            android:layout_height="@dimen/margin110dp"
+            android:layout_marginStart="@dimen/margin20dp"
+            android:layout_marginTop="@dimen/margin32dp"
+            android:background="@color/width_back"
+            android:src="@drawable/neomine"
+            app:layout_constraintStart_toStartOf="@+id/view_description_Four"
+            app:layout_constraintTop_toTopOf="@+id/view_description_Four" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_descriptionHead_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin12dp"
+        android:layout_marginBottom="@dimen/margin125dp"
+        android:background="@color/green"
+        android:fontFamily="@font/minecraft_font"
+        android:text="@string/NeoMain"
+        android:textColor="@color/white"
+        android:textSize="@dimen/margin23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_description_four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toEndOf="@+id/imageServerFour"
+        app:layout_constraintTop_toTopOf="@+id/view_description_Four"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_description_four"
+        android:layout_width="@dimen/margin300dp"
+        android:layout_height="@dimen/margin280dp"
+        android:fontFamily="@font/minecraft_font"
+        android:text="@string/description_NeoMain"
+        android:textColor="@color/diamond"
+        android:textSize="@dimen/margin16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view_description_Four"
+        app:layout_constraintEnd_toEndOf="@+id/view_description_Four"
+        app:layout_constraintStart_toStartOf="@+id/view_description_Four"
+        app:layout_constraintTop_toBottomOf="@+id/imageServerFour"
+        app:layout_constraintVertical_bias="0.78" />
+
+        <TextView
+            android:id="@+id/text_ipDescription_four"
+            android:layout_width="@dimen/margin160dp"
+            android:layout_height="@dimen/margin17dp"
+            android:layout_marginStart="@dimen/margin12dp"
+            android:layout_marginTop="@dimen/margin32dp"
+            android:fontFamily="@font/minecraft_font"
+            android:text="@string/ip_NeoMain"
+            android:textColor="@color/diamond"
+            android:textSize="@dimen/margin16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageServerFour"
+            app:layout_constraintTop_toBottomOf="@+id/text_descriptionHead_four" />
+
+        <TextView
+            android:id="@+id/text_portDescription_four"
+            android:layout_width="@dimen/margin160dp"
+            android:layout_height="@dimen/margin17dp"
+            android:layout_marginStart="@dimen/margin8dp"
+            android:layout_marginBottom="@dimen/margin50dp"
+            android:fontFamily="@font/minecraft_font"
+            android:text="@string/port_NeoMain"
+            android:textColor="@color/diamond"
+            android:textSize="@dimen/margin16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/text_description_four"
+            app:layout_constraintEnd_toEndOf="@+id/view_description_Four"
+            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintStart_toEndOf="@+id/imageServerFour" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

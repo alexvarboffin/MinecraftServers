@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#09803A</color>
+    <color name="brown">#502F17</color>
+    <color name="blue">#83B9DD</color>
+    <color name="light_brown">#8F6767</color>
+    <color name="dark_blue">#3D58A3</color>
+    <color name="diamond">#4EFBE4</color>
+    <color name="violet">#73249A</color>
+    <color name="black">#302F2F</color>
+    <color name="grey">#3C3B3B</color>
+    <color name="white">#D1D1D1</color>
+    <color name="width">#424040</color>
+    <color name="width_back">#F35A5959</color>
+</resources>

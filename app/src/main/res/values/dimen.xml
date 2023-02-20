@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="matchConstraint">0dp</dimen>
+    <dimen name="margin2dp">2dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="margin12dp">12dp</dimen>
+    <dimen name="margin16dp">16dp</dimen>
+    <dimen name="margin20dp">20dp</dimen>
+    <dimen name="margin22dp">22dp</dimen>
+    <dimen name="margin30dp">30dp</dimen>
+    <dimen name="margin32dp">32dp</dimen>
+    <dimen name="margin40dp">40dp</dimen>
+    <dimen name="margin50dp">50dp</dimen>
+    <dimen name="margin52dp">52dp</dimen>
+    <dimen name="margin60dp">60dp</dimen>
+    <dimen name="margin64dp">64dp</dimen>
+    <dimen name="margin72dp">72dp</dimen>
+    <dimen name="margin110dp">110dp</dimen>
+    <dimen name="margin160dp">160dp</dimen>
+    <dimen name="margin220dp">220dp</dimen>
+    <dimen name="margin260dp">260dp</dimen>
+    <dimen name="margin280dp">280dp</dimen>
+    <dimen name="margin300dp">300dp</dimen>
+    <dimen name="margin540dp">540dp</dimen>
+
+
+    <dimen name="margin17dp">17dp</dimen>
+    <dimen name="margin35dp">35dp</dimen>
+    <dimen name="margin37dp">37dp</dimen>
+    <dimen name="margin75dp">75dp</dimen>
+    <dimen name="margin125dp">125dp</dimen>
+    <dimen name="margin135dp">135dp</dimen>
+    <dimen name="margin145dp">145dp</dimen>
+    <dimen name="margin175dp">175dp</dimen>
+    <dimen name="margin225dp">225dp</dimen>
+    <dimen name="margin245dp">245dp</dimen>
+    <dimen name="margin365dp">365dp</dimen>
+    <dimen name="margin475dp">475dp</dimen>
+
+    <dimen name="image_size100dp">100dp</dimen>
+
+    <dimen name="margin10sp">10sp</dimen>
+    <dimen name="margin12sp">12sp</dimen>
+    <dimen name="margin14sp">14sp</dimen>
+    <dimen name="margin16sp">16sp</dimen>
+    <dimen name="margin20sp">20sp</dimen>
+    <dimen name="margin23sp">23sp</dimen>
+
+</resources>

@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Servers for Minecraft PE</string>
+    <string name="home_server">Сервера</string>
+    <string name="home_minecraft">Майнкрафт</string>
+    <string name="home_textServer1.1">Сервера 1.1</string>
+    <string name="home_textServer1.16">Сервера 1.16-1.19</string>
+    <string name="mini_games">Сервера мини-игры</string>
+    <string name="textPrivacy">privacy policy</string>
+    <string name="back">назад</string>
+    <string name="to_server">Перейти на сервер</string>
+
+
+    <!--BloodMine 1.1-1.16-->
+    <string name="ip_bloodMine">IP BMPE.PW</string>
+    <string name="port_bloodMine">PORT 19132</string>
+    <string name="bloodMine">BloodMine</string>
+    <string name="description_bloodMine">Сотни различных команд и возможностей
+Уникальная генерация, множество варпов, свои крафты брони
+Отзывчивая администрация, каждый день ведутся работы над сервером.
+Различные системы опыта, кланов, защита от гриферов.
+Множество видов кейсов, магические предметы.
+Имеется сервер по SkyWars, разрабатываются другие мини-игры.
+Банк, казино, лаки блоки, превращения в мобов и другое!</string>
+
+    <!--BloodMine SkyWars 1.1-1.16-->
+    <string name="ip_SkyWars">IP BMPE.PW</string>
+    <string name="port_SkyWars">PORT 19130</string>
+    <!--BloodMine SkyWars 1.16-->
+    <string name="port_SkyWars_">PORT 19131</string>
+    <string name="SkyWars">SkyWars</string>
+    <string name="description_skyWars">На серверах мини игр BloodMine вы сможете поиграть в компании друзей
+        в различные мини-игры, такие как SkyWars, BedWars,
+        Spleef, и множестве других мини-игр!
+        На сервере разлчиные возможности в виде прокачки персонажа, топы игрков, гонка кланов!</string>
+
+    <!--FitoCraft 1.1-->
+    <string name="ip_FitoCraft">IP fitocraft.ru</string>
+    <string name="port_FitoCraft">PORT 19138</string>
+    <string name="FitoCraft">FitoCraft</string>
+    <string name="description_fitoCraft">Владелец не добавил описание </string>
+
+    <!--NeoMain 1.1-->
+    <string name="ip_NeoMain">IP neominepe.ru</string>
+    <string name="port_NeoMain">PORT 19132</string>
+    <string name="NeoMain">NeoMain</string>
+    <string name="description_NeoMain">Мирное выживание,выживание с бесплатным донатом,Гриф. </string>
+
+    <!--VANILLA PATINA 1.16-->
+    <string name="vanilla_patina">VANILLA PATINA</string>
+    <string name="ip_vanilla">vanillapatina.ru</string>
+    <string name="port_vanilla">PORT 19132</string>
+    <string name="description_Vanilla">Ванильное выживание (Ванильное ядро). Без приватов.
+        Без читеров. Без лагов. Все равны. Стройте любые фермы.
+        Торгуйте. Продавайте или покупайте ресурсы. Создавайте кланы.</string>
+
+    <!--LimeDex 1.16-->
+    <string name="LimeDex">LimeDex</string>
+    <string name="ip_limDex">IP be.lime-d.ru</string>
+    <string name="port_LimDex">PORT 19132</string>
+    <string name="description_LimDex">Выживание, гриф, дешевый донат, хороший онлайн,
+        отзывчивая администрация и многое другое именно тут</string>
+
+    <!--SunWix BedWars 1.19-->
+    <string name="sunwix">SunWix BedWars</string>
+    <string name="ip_sunwix">IP sunwix.ru</string>
+    <string name="port_sunwix">PORT 19131</string>
+    <string name="description_sunwix">BedWars - мини-игра, суть которой уничтожать врагов других команд и их кровати,
+        чтобы противники не могли возрождаться. У каждой команды свой остров и цвет. Побеждает команда, у которой остались живые игроки
+Вы найдете красивые игровые карты карты, классных игроков, отсутствие багов и многое другое!</string>
+
+    <!--Cristalix 1.17-1.19-->
+    <string name="cristalix">CRISTALIX</string>
+    <string name="ip_cristalix">IP cristalix.pe</string>
+    <string name="port_cristalix">PORT 19132</string>
+    <string name="description_cristalix">обновлённый проект на новом издании игры.
+        Мы адаптируем игры со всего корпуса Cristalix и даём возможность насладиться уникальными и захватывающими играми</string>
+
+    <!--GreensMCPE 1.1-1.19-->
+    <string name="greensMCPE">Greens MCPE</string>
+    <string name="ip_greens">IP grpe.fun</string>
+    <string name="port_greens">PORT 19132</string>
+    <string name="description_greens">уникальный проект, который включает в себя комплекс серверов
+        для Minecraft PE на версию 1.1 и выше. Выбирайте сервера, которые Вам по душе,
+        от простого выживания до захватывающих мини игр. </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
+

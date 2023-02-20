@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mine.minecraftservers.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_serverTwoFragment"
+            app:destination="@id/serverTwoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_serverOneFragment"
+            app:destination="@id/serverOneFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_serverGamesFragment"
+            app:destination="@id/serverGamesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_serverFragment"
+            app:destination="@id/serverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverGamesFragment"
+        android:name="com.mine.minecraftservers.fragment.serverGames.ServerGamesFragment"
+        android:label="fragment_server_games"
+        tools:layout="@layout/fragment_server_games">
+        <action
+            android:id="@+id/action_serverGamesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_serverGamesFragment_to_serverGamesTwoFragment"
+            app:destination="@id/serverGamesTwoFragment" />
+        <action
+            android:id="@+id/action_serverGamesFragment_to_serverGamesOneFragment"
+            app:destination="@id/serverGamesOneFragment" />
+        <action
+            android:id="@+id/action_serverGamesFragment_to_serverGamesFourFragment"
+            app:destination="@id/serverGamesFourFragment" />
+        <action
+            android:id="@+id/action_serverGamesFragment_to_serverGamesThreeFragment"
+            app:destination="@id/serverGamesThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverOneFragment"
+        android:name="com.mine.minecraftservers.fragment.serverOneVersion.ServerOneFragment"
+        android:label="fragment_server_one"
+        tools:layout="@layout/fragment_server_one">
+        <action
+            android:id="@+id/action_serverOneFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_serverOneFragment_to_serverDescriptionOneFragment"
+            app:destination="@id/serverDescriptionOneFragment" />
+        <action
+            android:id="@+id/action_serverOneFragment_to_serverDescriptionFourFragment"
+            app:destination="@id/serverDescriptionFourFragment" />
+        <action
+            android:id="@+id/action_serverOneFragment_to_serverDescriptionTwoFragment"
+            app:destination="@id/serverDescriptionTwoFragment" />
+        <action
+            android:id="@+id/action_serverOneFragment_to_serverDescriptionThreeFragment"
+            app:destination="@id/serverDescriptionThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverTwoFragment"
+        android:name="com.mine.minecraftservers.fragment.serverTwoVersion.ServerTwoFragment"
+        android:label="fragment_server_two"
+        tools:layout="@layout/fragment_server_two">
+        <action
+            android:id="@+id/action_serverTwoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_serverTwoFragment_to_serverOneDescriptionFragment"
+            app:destination="@id/serverOneDescriptionFragment" />
+        <action
+            android:id="@+id/action_serverTwoFragment_to_serverFourDescriptionFragment"
+            app:destination="@id/serverFourDescriptionFragment" />
+        <action
+            android:id="@+id/action_serverTwoFragment_to_serverTwoDescriptionFragment"
+            app:destination="@id/serverTwoDescriptionFragment" />
+        <action
+            android:id="@+id/action_serverTwoFragment_to_serverThreeDescriptionFragment"
+            app:destination="@id/serverThreeDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverGamesFourFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionGames.ServerGamesFourFragment"
+        android:label="fragment_server_games_four"
+        tools:layout="@layout/fragment_server_games_four">
+        <action
+            android:id="@+id/action_serverGamesFourFragment_to_serverGamesFragment"
+            app:destination="@id/serverGamesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverGamesOneFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionGames.ServerGamesOneFragment"
+        android:label="fragment_server_games_one"
+        tools:layout="@layout/fragment_server_games_one">
+        <action
+            android:id="@+id/action_serverGamesOneFragment_to_serverGamesFragment"
+            app:destination="@id/serverGamesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverGamesThreeFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionGames.ServerGamesThreeFragment"
+        android:label="fragment_server_games_three"
+        tools:layout="@layout/fragment_server_games_three">
+        <action
+            android:id="@+id/action_serverGamesThreeFragment_to_serverGamesFragment"
+            app:destination="@id/serverGamesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverGamesTwoFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionGames.ServerGamesTwoFragment"
+        android:label="fragment_server_games_two"
+        tools:layout="@layout/fragment_server_games_two">
+        <action
+            android:id="@+id/action_serverGamesTwoFragment_to_serverGamesFragment"
+            app:destination="@id/serverGamesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverDescriptionFourFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionOne.ServerDescriptionFourFragment"
+        android:label="fragment_server_description_four"
+        tools:layout="@layout/fragment_server_description_four">
+        <action
+            android:id="@+id/action_serverDescriptionFourFragment_to_serverOneFragment"
+            app:destination="@id/serverOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverDescriptionOneFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionOne.ServerDescriptionOneFragment"
+        android:label="fragment_server_description_one"
+        tools:layout="@layout/fragment_server_description_one">
+        <action
+            android:id="@+id/action_serverDescriptionOneFragment_to_serverOneFragment"
+            app:destination="@id/serverOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverDescriptionThreeFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionOne.ServerDescriptionThreeFragment"
+        android:label="fragment_server_description_three"
+        tools:layout="@layout/fragment_server_description_three">
+        <action
+            android:id="@+id/action_serverDescriptionThreeFragment_to_serverOneFragment"
+            app:destination="@id/serverOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverDescriptionTwoFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionOne.ServerDescriptionTwoFragment"
+        android:label="fragment_server_description_two"
+        tools:layout="@layout/fragment_server_description_two">
+        <action
+            android:id="@+id/action_serverDescriptionTwoFragment_to_serverOneFragment"
+            app:destination="@id/serverOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverFourDescriptionFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionTwo.ServerFourDescriptionFragment"
+        android:label="fragment_server_four_description"
+        tools:layout="@layout/fragment_server_four_description">
+        <action
+            android:id="@+id/action_serverFourDescriptionFragment_to_serverTwoFragment"
+            app:destination="@id/serverTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverOneDescriptionFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionTwo.ServerOneDescriptionFragment"
+        android:label="fragment_server_one_description"
+        tools:layout="@layout/fragment_server_one_description">
+        <action
+            android:id="@+id/action_serverOneDescriptionFragment_to_serverTwoFragment"
+            app:destination="@id/serverTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverThreeDescriptionFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionTwo.ServerThreeDescriptionFragment"
+        android:label="fragment_server_three_description"
+        tools:layout="@layout/fragment_server_three_description">
+        <action
+            android:id="@+id/action_serverThreeDescriptionFragment_to_serverTwoFragment"
+            app:destination="@id/serverTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverTwoDescriptionFragment"
+        android:name="com.mine.minecraftservers.fragment.serverDescriptionTwo.ServerTwoDescriptionFragment"
+        android:label="fragment_server_two_description"
+        tools:layout="@layout/fragment_server_two_description">
+        <action
+            android:id="@+id/action_serverTwoDescriptionFragment_to_serverTwoFragment"
+            app:destination="@id/serverTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serverFragment"
+        android:name="com.mine.minecraftservers.fragment.servers.ServerFragment"
+        android:label="fragment_server"
+        tools:layout="@layout/fragment_server">
+
+    </fragment>
+</navigation>
