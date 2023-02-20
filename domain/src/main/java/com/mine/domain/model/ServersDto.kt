@@ -10,9 +10,9 @@ data class ServersDto(
     val description: String,
 )
 
-//data class ServersDto(
-//  val fields: List<Field>
-//)
+data class Test(
+ val fields: List<Field>
+)
 
 data class Field(
     val title: String,
