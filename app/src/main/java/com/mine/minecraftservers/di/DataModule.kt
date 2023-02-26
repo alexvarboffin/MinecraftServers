@@ -2,7 +2,6 @@ package com.mine.minecraftservers.di
 
 import com.google.gson.GsonBuilder
 import com.mine.data.RetrofitCreator
-import com.mine.data.convertor.ServersToServersDtoConvertor
 import com.mine.data.network.NetworkService
 import com.mine.data.network.NetworkStorage
 import com.mine.data.network.NetworkStorageImpl
@@ -20,9 +19,8 @@ val dataModule = module {
     single<NetworkStorage> {
         NetworkStorageImpl(get())
     }
-    single<NetworkRepository> {
-        NetworkRepositoryImpl(get(),get())
-    }
-    factory {ServersToServersDtoConvertor()}
 
+    single<NetworkRepository> {
+        NetworkRepositoryImpl(get())
+    }
 }

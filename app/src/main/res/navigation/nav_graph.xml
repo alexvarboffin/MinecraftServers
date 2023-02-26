@@ -19,8 +19,8 @@
             android:id="@+id/action_homeFragment_to_serverGamesFragment"
             app:destination="@id/serverGamesFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_serverFragment"
-            app:destination="@id/serverFragment" />
+            android:id="@+id/action_homeFragment_to_serversFragment"
+            app:destination="@id/serversFragment" />
     </fragment>
     <fragment
         android:id="@+id/serverGamesFragment"
@@ -194,10 +194,9 @@
             app:destination="@id/serverTwoFragment" />
     </fragment>
     <fragment
-        android:id="@+id/serverFragment"
-        android:name="com.mine.minecraftservers.fragment.servers.ServerFragment"
-        android:label="fragment_server"
-        tools:layout="@layout/fragment_server">
-
+        android:id="@+id/serversFragment"
+        android:name="com.mine.minecraftservers.fragment.servers.ServersFragment"
+        android:label="fragment_servers"
+        tools:layout="@layout/fragment_servers" >
     </fragment>
 </navigation>

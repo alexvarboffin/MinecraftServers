@@ -1,5 +1,6 @@
 package com.mine.minecraftservers.fragment
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -25,13 +26,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToServerGamesFragment())
         }
         textPrivacy.setOnClickListener {
-        navController.navigate(HomeFragmentDirections.actionHomeFragmentToServerFragment())
-
+        navController.navigate(HomeFragmentDirections.actionHomeFragmentToServersFragment())
         }
     }
 }
-
-//textPrivacy.setOnClickListener {
+//   textPrivacy.setOnClickListener {
 //            try {
 //                startActivity(
 //                    Intent(
@@ -45,3 +44,5 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 //                    Toast.LENGTH_SHORT
 //                )).show()
 //            }
+//
+//        }
