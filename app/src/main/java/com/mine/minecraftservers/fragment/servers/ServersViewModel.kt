@@ -4,15 +4,17 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.mine.domain.model.ServersDto
+import com.mine.domain.usecase.ServersUseCase
 import kotlinx.coroutines.launch
 
-//class ServersViewModel(private val useCase: ServersUseCase) : ViewModel() {
-//    private val _serversLiveData = MutableLiveData<List<ServersDto>>()
-//    val serversLiveData: LiveData<List<ServersDto>> = _serversLiveData
-//    fun getServers() {
-//        viewModelScope.launch {
-//           _serversLiveData.value = useCase.execute()
-//
-//        }
-//    }
-//}
+class ServersViewModel(private val useCase: ServersUseCase) : ViewModel() {
+    private val _serversLiveData = MutableLiveData<List<ServersDto>>()
+    val serversLiveData: LiveData<List<ServersDto>> = _serversLiveData
+    fun getServers() {
+        viewModelScope.launch {
+            _serversLiveData.value = useCase.execute()
+        }
+    }
+}
+

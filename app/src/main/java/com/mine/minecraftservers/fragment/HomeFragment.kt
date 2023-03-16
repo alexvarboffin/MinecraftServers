@@ -1,6 +1,5 @@
 package com.mine.minecraftservers.fragment
 
-
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -29,24 +28,22 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToServerGamesFragment())
         }
         textPrivacy.setOnClickListener {
-            try {
-                startActivity(
-                    Intent(
-                        Intent.ACTION_VIEW, Uri.parse("https://bloodmine-pe.ru/privacy.html")
-                    )
-                )
-            } catch (e: Exception) {
-                (Toast.makeText(
-                    requireContext(),
-                    "Отсуствует интернет подключение",
-                    Toast.LENGTH_SHORT
-                )).show()
-            }
+            navController.navigate(HomeFragmentDirections.actionHomeFragmentToServersFragment())
         }
     }
 }
 
 
-// //textPrivacy.setOnClickListener {
-//        //navController.navigate(HomeFragmentDirections.actionHomeFragmentToServersFragment())
-//       // }
+// try {
+//                startActivity(
+//                    Intent(
+//                        Intent.ACTION_VIEW, Uri.parse("https://bloodmine-pe.ru/privacy.html")
+//                    )
+//                )
+//            } catch (e: Exception) {
+//                (Toast.makeText(
+//                    requireContext(),
+//                    "Отсуствует интернет подключение",
+//                    Toast.LENGTH_SHORT
+//                )).show()
+//            }
