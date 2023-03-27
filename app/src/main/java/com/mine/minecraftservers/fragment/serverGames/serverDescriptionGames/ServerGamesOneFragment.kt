@@ -1,4 +1,4 @@
-package com.mine.minecraftservers.fragment.serverDescriptionTwo
+package com.mine.minecraftservers.fragment.serverGames.serverDescriptionGames
 
 import android.content.Intent
 import android.net.Uri
@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import com.mine.minecraftservers.base.BaseFragment
-import com.mine.minecraftservers.databinding.FragmentServerThreeDescriptionBinding
+import com.mine.minecraftservers.databinding.FragmentServerGamesOneBinding
 
 
-class ServerThreeDescriptionFragment : BaseFragment<FragmentServerThreeDescriptionBinding>() {
+class ServerGamesOneFragment : BaseFragment<FragmentServerGamesOneBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
-    ): FragmentServerThreeDescriptionBinding =
-        FragmentServerThreeDescriptionBinding.inflate(inflater, container, false)
+    ): FragmentServerGamesOneBinding =
+        FragmentServerGamesOneBinding.inflate(inflater, container, false)
 
 
-    override fun FragmentServerThreeDescriptionBinding.onBindView(saveInstanceState: Bundle?) {
-        backThreeToServer.setOnClickListener {
-            navController.navigate(ServerThreeDescriptionFragmentDirections.actionServerThreeDescriptionFragmentToServerTwoFragment())
+    override fun FragmentServerGamesOneBinding.onBindView(saveInstanceState: Bundle?) {
+        backToServerGamesOne.setOnClickListener {
+            navController.navigate(ServerGamesOneFragmentDirections.actionServerGamesOneFragmentToServerGamesFragment())
         }
-        buttonThreeToServer.setOnClickListener {
+        buttonToServerGamesOne.setOnClickListener {
             try {
                 startActivity(
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("minecraft:://?addExternalServer=Vanilla Patina|vanillapatina.ru:19132")
+                        Uri.parse("minecraft:://?addExternalServer=SunWix BedWars|sunwix.ru:19131")
                     )
                 )
             } catch (e: Exception) {
@@ -42,7 +42,6 @@ class ServerThreeDescriptionFragment : BaseFragment<FragmentServerThreeDescripti
             }
         }
     }
-
     private fun init() {
         Toast.makeText(
             requireContext(),
@@ -53,3 +52,4 @@ class ServerThreeDescriptionFragment : BaseFragment<FragmentServerThreeDescripti
         Thread.sleep(1000)
     }
 }
+

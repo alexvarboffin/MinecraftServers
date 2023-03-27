@@ -1,4 +1,4 @@
-package com.mine.minecraftservers.fragment.serverDescriptionOne
+package com.mine.minecraftservers.fragment.serverGames.serverDescriptionGames
 
 import android.content.Intent
 import android.net.Uri
@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import com.mine.minecraftservers.base.BaseFragment
-import com.mine.minecraftservers.databinding.FragmentServerDescriptionThreeBinding
+import com.mine.minecraftservers.databinding.FragmentServerGamesThreeBinding
 
 
-class ServerDescriptionThreeFragment : BaseFragment<FragmentServerDescriptionThreeBinding>() {
+class ServerGamesThreeFragment : BaseFragment<FragmentServerGamesThreeBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
-    ): FragmentServerDescriptionThreeBinding =
-        FragmentServerDescriptionThreeBinding.inflate(inflater, container, false)
+    ): FragmentServerGamesThreeBinding =
+        FragmentServerGamesThreeBinding.inflate(inflater, container, false)
 
 
-    override fun FragmentServerDescriptionThreeBinding.onBindView(saveInstanceState: Bundle?) {
-        backToServerThree.setOnClickListener {
-            navController.navigate(ServerDescriptionThreeFragmentDirections.actionServerDescriptionThreeFragmentToServerOneFragment())
+    override fun FragmentServerGamesThreeBinding.onBindView(saveInstanceState: Bundle?) {
+        backToServerGamesThree.setOnClickListener {
+            navController.navigate(ServerGamesThreeFragmentDirections.actionServerGamesThreeFragmentToServerGamesFragment())
         }
-        buttonToServerThree.setOnClickListener {
+        buttonToServerGamesThree.setOnClickListener {
             try {
                 startActivity(
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("minecraft:://?addExternalServer=FitoCraft|fitocraft.ru:19132")
+                        Uri.parse("minecraft:://?addExternalServer=Cristalix|cristalix.pe:19132")
                     )
                 )
             } catch (e: Exception) {
@@ -53,7 +53,4 @@ class ServerDescriptionThreeFragment : BaseFragment<FragmentServerDescriptionThr
         Thread.sleep(1000)
     }
 }
-
-
-
 

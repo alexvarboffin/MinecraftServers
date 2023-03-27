@@ -1,4 +1,4 @@
-package com.mine.minecraftservers.fragment.serverDescriptionGames
+package com.mine.minecraftservers.fragment.serverTwoVersion.serverDescriptionTwo
 
 import android.content.Intent
 import android.net.Uri
@@ -7,26 +7,27 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import com.mine.minecraftservers.base.BaseFragment
-import com.mine.minecraftservers.databinding.FragmentServerGamesFourBinding
+import com.mine.minecraftservers.databinding.FragmentServerTwoDescriptionBinding
 
-class ServerGamesFourFragment : BaseFragment<FragmentServerGamesFourBinding>() {
+
+class ServerTwoDescriptionFragment : BaseFragment<FragmentServerTwoDescriptionBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
-    ): FragmentServerGamesFourBinding =
-        FragmentServerGamesFourBinding.inflate(inflater, container, false)
+    ): FragmentServerTwoDescriptionBinding =
+        FragmentServerTwoDescriptionBinding.inflate(inflater, container, false)
 
 
-    override fun FragmentServerGamesFourBinding.onBindView(saveInstanceState: Bundle?) {
-        backToServerGamesFour.setOnClickListener {
-            navController.navigate(ServerGamesFourFragmentDirections.actionServerGamesFourFragmentToServerGamesFragment())
+    override fun FragmentServerTwoDescriptionBinding.onBindView(saveInstanceState: Bundle?) {
+        backTwoToServer.setOnClickListener {
+            navController.navigate(ServerTwoDescriptionFragmentDirections.actionServerTwoDescriptionFragmentToServerTwoFragment())
         }
-        buttonToServerGamesFour.setOnClickListener {
+        buttonTwoToServer.setOnClickListener {
             try {
                 startActivity(
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("minecraft:://?addExternalServer=BloodMine|bmpe.pw:19131")
+                        Uri.parse("minecraft:://?addExternalServer= BloodMine SkyWars|bmpe.pw:19131")
                     )
                 )
             } catch (e: Exception) {
@@ -52,5 +53,3 @@ class ServerGamesFourFragment : BaseFragment<FragmentServerGamesFourBinding>() {
         Thread.sleep(1000)
     }
 }
-
-

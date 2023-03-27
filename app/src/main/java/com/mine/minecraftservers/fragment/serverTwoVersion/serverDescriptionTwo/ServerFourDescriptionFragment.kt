@@ -1,4 +1,4 @@
-package com.mine.minecraftservers.fragment.serverDescriptionGames
+package com.mine.minecraftservers.fragment.serverTwoVersion.serverDescriptionTwo
 
 import android.content.Intent
 import android.net.Uri
@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import com.mine.minecraftservers.base.BaseFragment
-import com.mine.minecraftservers.databinding.FragmentServerGamesOneBinding
+import com.mine.minecraftservers.databinding.FragmentServerFourDescriptionBinding
 
 
-class ServerGamesOneFragment : BaseFragment<FragmentServerGamesOneBinding>() {
+class ServerFourDescriptionFragment : BaseFragment<FragmentServerFourDescriptionBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
-    ): FragmentServerGamesOneBinding =
-        FragmentServerGamesOneBinding.inflate(inflater, container, false)
+    ): FragmentServerFourDescriptionBinding =
+        FragmentServerFourDescriptionBinding.inflate(inflater, container, false)
 
 
-    override fun FragmentServerGamesOneBinding.onBindView(saveInstanceState: Bundle?) {
-        backToServerGamesOne.setOnClickListener {
-            navController.navigate(ServerGamesOneFragmentDirections.actionServerGamesOneFragmentToServerGamesFragment())
+    override fun FragmentServerFourDescriptionBinding.onBindView(saveInstanceState: Bundle?) {
+        backFourToServer.setOnClickListener {
+            navController.navigate(ServerFourDescriptionFragmentDirections.actionServerFourDescriptionFragmentToServerTwoFragment())
         }
-        buttonToServerGamesOne.setOnClickListener {
+        buttonFourToServer.setOnClickListener {
             try {
                 startActivity(
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("minecraft:://?addExternalServer=SunWix BedWars|sunwix.ru:19131")
+                        Uri.parse("minecraft:://?addExternalServer=Limedex|be.lime-d.ru:19132")
                     )
                 )
             } catch (e: Exception) {
@@ -42,6 +42,7 @@ class ServerGamesOneFragment : BaseFragment<FragmentServerGamesOneBinding>() {
             }
         }
     }
+
     private fun init() {
         Toast.makeText(
             requireContext(),
@@ -52,4 +53,3 @@ class ServerGamesOneFragment : BaseFragment<FragmentServerGamesOneBinding>() {
         Thread.sleep(1000)
     }
 }
-

@@ -1,4 +1,4 @@
-package com.mine.minecraftservers.fragment.serverDescriptionTwo
+package com.mine.minecraftservers.fragment.serverOneVersion.serverDescriptionOne
 
 import android.content.Intent
 import android.net.Uri
@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import com.mine.minecraftservers.base.BaseFragment
-import com.mine.minecraftservers.databinding.FragmentServerFourDescriptionBinding
+import com.mine.minecraftservers.databinding.FragmentServerDescriptionFourBinding
 
 
-class ServerFourDescriptionFragment : BaseFragment<FragmentServerFourDescriptionBinding>() {
+class ServerDescriptionFourFragment : BaseFragment<FragmentServerDescriptionFourBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
-    ): FragmentServerFourDescriptionBinding =
-        FragmentServerFourDescriptionBinding.inflate(inflater, container, false)
+    ): FragmentServerDescriptionFourBinding =
+        FragmentServerDescriptionFourBinding.inflate(inflater, container, false)
 
 
-    override fun FragmentServerFourDescriptionBinding.onBindView(saveInstanceState: Bundle?) {
-        backFourToServer.setOnClickListener {
-            navController.navigate(ServerFourDescriptionFragmentDirections.actionServerFourDescriptionFragmentToServerTwoFragment())
+    override fun FragmentServerDescriptionFourBinding.onBindView(saveInstanceState: Bundle?) {
+        backToServerFour.setOnClickListener {
+            navController.navigate(ServerDescriptionFourFragmentDirections.actionServerDescriptionFourFragmentToServerOneFragment())
         }
-        buttonFourToServer.setOnClickListener {
+        buttonToServerFour.setOnClickListener {
             try {
                 startActivity(
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("minecraft:://?addExternalServer=Limedex|be.lime-d.ru:19132")
+                        Uri.parse("minecraft:://?addExternalServer=NeoMine|neominepe.ru:19132")
                     )
                 )
             } catch (e: Exception) {
@@ -53,3 +53,5 @@ class ServerFourDescriptionFragment : BaseFragment<FragmentServerFourDescription
         Thread.sleep(1000)
     }
 }
+
+

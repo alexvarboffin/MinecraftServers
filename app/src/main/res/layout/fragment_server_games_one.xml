@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mine_background"
-    tools:context=".fragment.serverDescriptionGames.ServerGamesOneFragment">
+    tools:context=".fragment.serverGames.serverDescriptionGames.ServerGamesOneFragment">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_ToServerGamesOne"
@@ -61,7 +61,6 @@
             android:layout_marginStart="@dimen/margin20dp"
             android:layout_marginTop="@dimen/margin32dp"
             android:background="@color/width_back"
-            android:src="@drawable/sunwix"
             app:layout_constraintStart_toStartOf="@+id/view_description_gamesOne"
             app:layout_constraintTop_toTopOf="@+id/view_description_gamesOne" />
 

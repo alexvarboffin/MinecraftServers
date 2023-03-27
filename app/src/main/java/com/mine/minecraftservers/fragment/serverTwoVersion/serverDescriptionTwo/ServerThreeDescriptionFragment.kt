@@ -1,4 +1,4 @@
-package com.mine.minecraftservers.fragment.serverDescriptionOne
+package com.mine.minecraftservers.fragment.serverTwoVersion.serverDescriptionTwo
 
 import android.content.Intent
 import android.net.Uri
@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import com.mine.minecraftservers.base.BaseFragment
-import com.mine.minecraftservers.databinding.FragmentServerDescriptionTwoBinding
+import com.mine.minecraftservers.databinding.FragmentServerThreeDescriptionBinding
 
 
-class ServerDescriptionTwoFragment : BaseFragment<FragmentServerDescriptionTwoBinding>() {
+class ServerThreeDescriptionFragment : BaseFragment<FragmentServerThreeDescriptionBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
-    ): FragmentServerDescriptionTwoBinding =
-        FragmentServerDescriptionTwoBinding.inflate(inflater, container, false)
+    ): FragmentServerThreeDescriptionBinding =
+        FragmentServerThreeDescriptionBinding.inflate(inflater, container, false)
 
 
-    override fun FragmentServerDescriptionTwoBinding.onBindView(saveInstanceState: Bundle?) {
-        backToServerTwo.setOnClickListener {
-            navController.navigate(ServerDescriptionTwoFragmentDirections.actionServerDescriptionTwoFragmentToServerOneFragment())
+    override fun FragmentServerThreeDescriptionBinding.onBindView(saveInstanceState: Bundle?) {
+        backThreeToServer.setOnClickListener {
+            navController.navigate(ServerThreeDescriptionFragmentDirections.actionServerThreeDescriptionFragmentToServerTwoFragment())
         }
-        buttonToServerTwo.setOnClickListener {
+        buttonThreeToServer.setOnClickListener {
             try {
                 startActivity(
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("minecraft:://?addExternalServer=BloodMine SkyWars|bmpe.pw:19130")
+                        Uri.parse("minecraft:://?addExternalServer=Vanilla Patina|vanillapatina.ru:19132")
                     )
                 )
             } catch (e: Exception) {
@@ -42,6 +42,7 @@ class ServerDescriptionTwoFragment : BaseFragment<FragmentServerDescriptionTwoBi
             }
         }
     }
+
     private fun init() {
         Toast.makeText(
             requireContext(),
@@ -52,5 +53,3 @@ class ServerDescriptionTwoFragment : BaseFragment<FragmentServerDescriptionTwoBi
         Thread.sleep(1000)
     }
 }
-
-

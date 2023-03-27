@@ -1,4 +1,4 @@
-package com.mine.minecraftservers.fragment.serverDescriptionOne
+package com.mine.minecraftservers.fragment.serverOneVersion.serverDescriptionOne
 
 import android.content.Intent
 import android.net.Uri

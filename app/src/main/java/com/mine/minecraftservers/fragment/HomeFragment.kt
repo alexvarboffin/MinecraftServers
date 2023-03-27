@@ -28,22 +28,21 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToServerGamesFragment())
         }
         textPrivacy.setOnClickListener {
-            navController.navigate(HomeFragmentDirections.actionHomeFragmentToServersFragment())
+            try {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW, Uri.parse("https://bloodmine-pe.ru/privacy.html")
+                    )
+                )
+            } catch (e: Exception) {
+                (Toast.makeText(
+                    requireContext(),
+                    "Отсуствует интернет подключение",
+                    Toast.LENGTH_SHORT
+                )).show()
+            }
         }
     }
 }
 
 
-// try {
-//                startActivity(
-//                    Intent(
-//                        Intent.ACTION_VIEW, Uri.parse("https://bloodmine-pe.ru/privacy.html")
-//                    )
-//                )
-//            } catch (e: Exception) {
-//                (Toast.makeText(
-//                    requireContext(),
-//                    "Отсуствует интернет подключение",
-//                    Toast.LENGTH_SHORT
-//                )).show()
-//            }

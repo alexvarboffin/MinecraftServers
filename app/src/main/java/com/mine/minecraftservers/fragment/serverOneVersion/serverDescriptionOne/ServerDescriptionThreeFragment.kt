@@ -1,4 +1,4 @@
-package com.mine.minecraftservers.fragment.serverDescriptionOne
+package com.mine.minecraftservers.fragment.serverOneVersion.serverDescriptionOne
 
 import android.content.Intent
 import android.net.Uri
@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import com.mine.minecraftservers.base.BaseFragment
-import com.mine.minecraftservers.databinding.FragmentServerDescriptionFourBinding
+import com.mine.minecraftservers.databinding.FragmentServerDescriptionThreeBinding
 
 
-class ServerDescriptionFourFragment : BaseFragment<FragmentServerDescriptionFourBinding>() {
+class ServerDescriptionThreeFragment : BaseFragment<FragmentServerDescriptionThreeBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
-    ): FragmentServerDescriptionFourBinding =
-        FragmentServerDescriptionFourBinding.inflate(inflater, container, false)
+    ): FragmentServerDescriptionThreeBinding =
+        FragmentServerDescriptionThreeBinding.inflate(inflater, container, false)
 
 
-    override fun FragmentServerDescriptionFourBinding.onBindView(saveInstanceState: Bundle?) {
-        backToServerFour.setOnClickListener {
-            navController.navigate(ServerDescriptionFourFragmentDirections.actionServerDescriptionFourFragmentToServerOneFragment())
+    override fun FragmentServerDescriptionThreeBinding.onBindView(saveInstanceState: Bundle?) {
+        backToServerThree.setOnClickListener {
+            navController.navigate(ServerDescriptionThreeFragmentDirections.actionServerDescriptionThreeFragmentToServerOneFragment())
         }
-        buttonToServerFour.setOnClickListener {
+        buttonToServerThree.setOnClickListener {
             try {
                 startActivity(
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("minecraft:://?addExternalServer=NeoMine|neominepe.ru:19132")
+                        Uri.parse("minecraft:://?addExternalServer=FitoCraft|fitocraft.ru:19132")
                     )
                 )
             } catch (e: Exception) {
@@ -53,5 +53,7 @@ class ServerDescriptionFourFragment : BaseFragment<FragmentServerDescriptionFour
         Thread.sleep(1000)
     }
 }
+
+
 
 

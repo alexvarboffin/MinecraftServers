@@ -1,4 +1,4 @@
-package com.mine.minecraftservers.fragment.serverDescriptionTwo
+package com.mine.minecraftservers.fragment.serverOneVersion.serverDescriptionOne
 
 import android.content.Intent
 import android.net.Uri
@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import com.mine.minecraftservers.base.BaseFragment
-import com.mine.minecraftservers.databinding.FragmentServerTwoDescriptionBinding
+import com.mine.minecraftservers.databinding.FragmentServerDescriptionTwoBinding
 
 
-class ServerTwoDescriptionFragment : BaseFragment<FragmentServerTwoDescriptionBinding>() {
+class ServerDescriptionTwoFragment : BaseFragment<FragmentServerDescriptionTwoBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
-    ): FragmentServerTwoDescriptionBinding =
-        FragmentServerTwoDescriptionBinding.inflate(inflater, container, false)
+    ): FragmentServerDescriptionTwoBinding =
+        FragmentServerDescriptionTwoBinding.inflate(inflater, container, false)
 
 
-    override fun FragmentServerTwoDescriptionBinding.onBindView(saveInstanceState: Bundle?) {
-        backTwoToServer.setOnClickListener {
-            navController.navigate(ServerTwoDescriptionFragmentDirections.actionServerTwoDescriptionFragmentToServerTwoFragment())
+    override fun FragmentServerDescriptionTwoBinding.onBindView(saveInstanceState: Bundle?) {
+        backToServerTwo.setOnClickListener {
+            navController.navigate(ServerDescriptionTwoFragmentDirections.actionServerDescriptionTwoFragmentToServerOneFragment())
         }
-        buttonTwoToServer.setOnClickListener {
+        buttonToServerTwo.setOnClickListener {
             try {
                 startActivity(
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("minecraft:://?addExternalServer= BloodMine SkyWars|bmpe.pw:19131")
+                        Uri.parse("minecraft:://?addExternalServer=BloodMine SkyWars|bmpe.pw:19130")
                     )
                 )
             } catch (e: Exception) {
@@ -42,7 +42,6 @@ class ServerTwoDescriptionFragment : BaseFragment<FragmentServerTwoDescriptionBi
             }
         }
     }
-
     private fun init() {
         Toast.makeText(
             requireContext(),
@@ -53,3 +52,5 @@ class ServerTwoDescriptionFragment : BaseFragment<FragmentServerTwoDescriptionBi
         Thread.sleep(1000)
     }
 }
+
+
