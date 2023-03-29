@@ -59,7 +59,7 @@ private class ServerOneViewHolder(private val parent: ViewGroup) :
         ListServerItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
     ) {
     override fun ListServerItemBinding.bind(value: ServersDto) {
-
+//   tittleServer.text = value
 
     }
 }
